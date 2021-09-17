@@ -1,0 +1,67 @@
+
+body{background: gray}
+video {
+    display: none;
+
+}
+body{
+    height:2000px
+}
+
+.buttons-holder{
+    width: 250px;
+    height: 55px;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    /*background: lightgray;*/
+    right: calc(50% - 125px);
+    padding-top: 15px!important;
+    padding: 10px;
+}
+
+.player-holder{
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    margin: 0;
+    bottom: 0;
+    right: 0;
+    background: white;
+}
+
+.player{
+    padding: 20px;
+    height: 80px;
+}
+.button{
+    width:50px;
+    height:50px;
+    cursor: pointer;
+}
+
+#cover{
+    width:50px;
+    height:50px;
+}
+
+
+#playButton{
+    display: inline-block;
+    background-image: url("../assets/img/play-button.svg");
+}
+
+#stopButton{
+    display: none;
+    background-image: url("../assets/img/stop.svg");
+}
+
+#muteButton{
+    display: none;
+    width: 20px;
+    height: 20px;
+    background-image: url("../assets/img/speaker.svg");
+}
+#volumeSlider{
+    display: none;
+}
