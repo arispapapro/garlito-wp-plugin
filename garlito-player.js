@@ -139,7 +139,7 @@ $(window).on('load', function() {
                //Set the streamUrl
                player.src = config.stream.url;
            }
-       } 
+       }
 
        //Init Color Settings
        updateColors();
