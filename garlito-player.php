@@ -138,15 +138,15 @@ function callback_for_setting_up_scripts() {
 	
     wp_register_script( 'jquery-js', plugins_url ( 'garlito-player/assets/js/jquery-3.6.0.min.js') );
   	wp_enqueue_script( 'jquery-js' );
-
+//
     wp_register_script( 'garlito-player-js', plugins_url ( 'garlito-player/dist/garlito-player.min.js') );
 	wp_enqueue_script( 'garlito-player-js' );
 
 
 	//For Developement
 
-    //    wp_register_script( 'garlito-player-js', plugins_url ( 'garlito-player/garlito-player.js') );
-    //    wp_enqueue_script( 'garlito-player-js' );
+//        wp_register_script( 'garlito-player-js', plugins_url ( 'garlito-player/src/garlito-player.js') );
+//        wp_enqueue_script( 'garlito-player-js' );
 
 //        wp_register_style( 'garlito-player-css', plugins_url ( 'garlito-player/dist/garlito-player.css') );
 //        wp_enqueue_style( 'garlito-player-css' );

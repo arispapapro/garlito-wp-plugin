@@ -222,6 +222,7 @@ $(window).on('load', function() {
     }
 
     function getLastTenSongs(){
+       console.log(config.lastSongsUrl.url);
         $.get( config.lastSongsUrl.url, ( data ) => {
 
             let songs = [];
@@ -280,10 +281,7 @@ $(window).on('load', function() {
                 html = html + ' <tr><td><img src="'+item.enclosure.url+'"></td></td><td>'+ item.title +'</td><td>'+item.description+'</td> <td>'+new Date(item.date* 1000).toLocaleTimeString()+'</td></tr>';
            });
        }
-
        html = html + '</tbody></table>';
-
-       console.log(html);
        return html;
     }
 
@@ -502,7 +500,7 @@ $(window).on('load', function() {
 
     function appendHtmlToBody(){
         //Set its unique ID.
-        myDiv.getElementById('garlitoPlayerAppend')
+        let myDiv = document.getElementById('garlitoPlayerAppend')
 
         //Add your content to the DIV
         myDiv.innerHTML ='<div class="modal fade" id="checkLastSongsModal" tabindex="-1" aria-labelledby="checkLastSongsModalLabel" aria-hidden="true"> <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"> <div class="modal-content"> <div class="modal-header"> <h4 class="modal-title" id="exampleModalLabel">Τελευταία Τραγούδια </h4> <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> </div><div id="lastSongsTable" class="modal-body "> </div><div class="modal-footer"> </div></div></div></div><div id="topBar" class="top-bar"> <div class="top-bar-icons"> <a href="https://facebook.com/bohemeradiogr" target="_blank" id="facebookIcon" class="top-bar-icon"></a> <a href="https://instagram.com/boheme.radio" target="_blank" id="instagramIcon" class="top-bar-icon"></a> <div id="historyIcon" class="top-bar-icon" data-bs-toggle="modal" data-bs-target="#checkLastSongsModal"></div><a href="https://chat.boheme-radio.com/boheme-radio" target="_blank" id="chatIcon" class="top-bar-icon"></a> </div></div><div id="playerHolder" class="player-holder"> <div class="player"> <input style="display:none" type="range" min="0" max="1" value="1" step="0.01" class="istyle" id="volumeSlider"> <div style="display:none" id="closePlayerButton" class="close-button">x</div><div style="display:none" id="muteButton" class="button"></div><div id="stationLogo" class="station-logo"></div><div id="stationTitle" class="station-title"></div><table class="info-table"> <tbody> <tr> <td rowspan="3"><img id="cover"></td><td><b><div id="artist"></div></b></td></tr><tr> <td><b><div id="title"></div></b></td></tr><tr> <td><div id="album"></div></td></tr></tbody> </table> <audio style="display:none"></audio> <div class="buttons-holder"> <div style="display:none" id="playButton" class="button"></div><div style="display:none" id="stopButton" class="button"></div></div></div><div id="waveEffect" class="wave2"></div><div></div></div>';
