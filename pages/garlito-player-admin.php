@@ -13,7 +13,8 @@
 		
 		 $new_value = array(
 			 'stream_type' => $_POST["stream_type"] , 
-			 'stream_url' => $_POST["stream_url"] , 
+			 'stream_url' => $_POST["stream_url"] ,
+			 'last_songs_url' => $_POST["last_songs_url"],
 			 'statistics_type' => $_POST["statistics_type"] , 
 			 'statistics_url' => $_POST["statistics_url"] , 
 			 'playerBackgroundColor' => $_POST["player_background_color"] , 
@@ -84,6 +85,11 @@
                 <div class="mb-3">
                     <label for="StatisticsUrl" class="form-label">Statistics URL</label>
                     <input type="text" class="form-control" id="StatisticsUrl" name="statistics_url" value="<?php echo $retrieve_data[0]->statistics_url; ?>">
+                </div>
+
+                <div class="mb-3">
+                    <label for="StatisticsUrl" class="form-label">Last Songs URL</label>
+                    <input type="text" class="form-control" id="LastSongsUrl" name="last_songs_url" value="<?php echo $retrieve_data[0]->last_songs_url; ?>">
                 </div>
 
                 <div class="mb-3">

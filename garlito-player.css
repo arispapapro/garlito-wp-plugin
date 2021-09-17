@@ -1,5 +1,16 @@
 @import "../garlito-player/assets/css/bootstrap.min.css";
 
+@media (min-width: 1px) and (max-width: 250px) {
+    #muteButton{ display:  none!important; }
+    #volumeSlider{  display:  none!important;}
+    .station-title{ display:none!important;}
+    .station-logo{ display:none!important;}
+    .info-table{ display: none!important;}
+    .buttons-holder{ width: 70px!important; right:20px!important;}
+    #artist{  display: none!important;  }
+    #title{  display: none!important;  }
+    #album{  display: none!important;  }
+}
 
 
 /* X-Small devices (portrait phones, less than 576px) */
@@ -10,7 +21,7 @@
     .station-logo{ display:none!important;}
     .info-table{ display: inline-block!important; left:20px!important;}
     .buttons-holder{ width: 70px!important; right:20px!important;}
-        #album{  display: none!important;  }
+     #album{  display: none!important;  }
 }
 
 /*  Small devices (landscape phones, less than 768px) */
@@ -40,7 +51,70 @@
 
 }
 
+#checkLastSongsModal{
+    z-index: 1000000001!important;
+}
+.top-bar-icons{
+    width: 140px;
+    height: 24px;
+    text-align: center;
+    position: absolute;
+    padding: 0;
+    left: calc(50% - 70px);
+    display: inline-block;
+}
 
+
+.top-bar-icon{
+    width: 20px!important;
+    height:20px!important;
+    margin: 0 5px;
+    position: relative;
+    display: inline-block!important;
+}
+
+#facebookIcon{
+
+    background-color: white;
+    mask: url("../garlito-player/assets/img/social-media/facebook.svg") no-repeat center / contain;
+    -webkit-mask: url("../garlito-player/assets/img/social-media/facebook.svg") no-repeat center / contain;
+    cursor: pointer;
+}
+
+
+#instagramIcon{
+    background-color: white;
+    mask: url("../garlito-player/assets/img/social-media/instagram.svg") no-repeat center / contain;
+    -webkit-mask: url("../garlito-player/assets/img/social-media/instagram.svg") no-repeat center / contain;
+    cursor: pointer;
+}
+
+#historyIcon{
+    background-color: white;
+    mask: url("../garlito-player/assets/img/history.svg") no-repeat center / contain;
+    -webkit-mask: url("../garlito-player/assets/img/history.svg") no-repeat center / contain;
+    cursor: pointer;
+}
+
+#chatIcon{
+    background-color: white;
+    mask: url("../garlito-player/assets/img/chat.svg") no-repeat center / contain;
+    -webkit-mask: url("../garlito-player/assets/img/chat.svg") no-repeat center / contain;
+    cursor: pointer;
+}
+
+.top-bar{
+    z-index: 1000000000!important;
+    text-align:center;
+    margin:0 auto!important;;
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    bottom: 120px;
+    padding: 3px;
+    right: 0;
+    background: black;
+}
 .close-button{
     position: absolute;
     top: -12.5px;
@@ -57,10 +131,10 @@
 }
 
 .station-title{
-    width: 120px;
+    width: 130px;
     height: 42px;
     position: absolute;
-    left: 70px;
+    left: 96px;
     top: 29px;
     padding: 10px;
     font-size: 15px;
@@ -82,8 +156,8 @@
     width: 300px;
     border: 0;
     position: absolute;
-    top: 8px;
-    left: 206px;
+    top: 18px;
+    left: 250px;
 }
 
 
@@ -92,6 +166,7 @@
     min-height: 0;
     padding: 0!important;
     border: 0;
+    font-size: 15px!important;
     padding-left: 10px!important;
 }
 audio {
@@ -114,7 +189,7 @@ body{
     position: absolute;
     text-align: center;
     margin: 0 auto;
-    top: 20px;
+    top: 11px;
     right: calc(50% - 125px);
     padding-top: 15px!important;
     padding: 10px;
@@ -131,7 +206,6 @@ body{
     bottom: 0;
     right: 0;
     background: white;
-    display: none;
 }
 
 .player{

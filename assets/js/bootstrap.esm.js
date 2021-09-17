@@ -957,7 +957,7 @@ EventHandler.on(document, EVENT_CLICK_DATA_API$6, SELECTOR_DATA_TOGGLE$5, event 
 });
 /**
  * ------------------------------------------------------------------------
- * jQuery
+ * songs
  * ------------------------------------------------------------------------
  * add .Button to jQuery only if jQuery is present
  */
