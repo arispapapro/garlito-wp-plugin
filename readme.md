@@ -1,4 +1,4 @@
-# Garlito Player Wordpress Plugin
+# Garlito Shoutcast Player Wordpress Plugin
 
 Garlito is a simple shoutcast & icecast web radio player.
 
