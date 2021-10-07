@@ -2,6 +2,8 @@
 
 Garlito is a simple shoutcast & icecast web radio player.
 
+Find a live Demo Here [Live Demo](https://boheme-radio.com),
+
 ## Description
 
 In order to use garlito plugin you need to have a shoutcast server and a centovacast analytics uri.
